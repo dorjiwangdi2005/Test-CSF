@@ -8,12 +8,13 @@ NO_of_visits = int(input("enter the number of URL history: "))
 
 print ("enter URLs to visit: ")
 for i in range (NO_of_visits):
+
     url = input("URL:")
     print(f"Visiting {url}")
     backward_history.put(current_page)
     current_page = url
 
-print (F'current page: {current_page}')
+print (f'current page: {current_page}')
 
 #go back
 while input("Do you want to go back? (yes/no: )").lower() == 'yes':
@@ -28,6 +29,6 @@ while input ('Do you want to go forwad? (yes/no): ').lower()== 'yes:':
     if not forward_history.empty():
         backward_history.put(current_page)
         current_page = forward_history.get()
-        print(F'Going to {current_page}')
+        print(f'Going to {current_page}')
     else: 
         print('No forward page available')
