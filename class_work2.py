@@ -1,6 +1,6 @@
 user_age = int(input("enter your age: "))
 
-question_ = input("are you a student?(  yes/no): ")
+question_ = input("are you a student?(  yes/no): "). lower()
 
 if user_age < 12 or question_ == "no":
     print ("you are eligible for a discount on a movie ticket.")
