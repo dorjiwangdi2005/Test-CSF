@@ -14,6 +14,7 @@ for i in range (1, triangle + 1) :
     for j in range(i):
         print(f"*", end= " ")  
     print()  
+    
 # to make a pyramid shape of using * in output and nested loops
 size = int(input("Enter the size: "))
 for i in range(1, size + 1):
